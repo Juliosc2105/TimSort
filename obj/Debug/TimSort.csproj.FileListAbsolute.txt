@@ -1,0 +1,8 @@
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\TimSort.csprojResolveAssemblyReference.cache
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.Properties.Resources.resources
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\TimSort.csproj.GenerateResource.Cache
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\WindowsFormsApp10.exe
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\bin\Debug\WindowsFormsApp10.pdb
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.Form1.resources
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.exe
+c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.pdb
