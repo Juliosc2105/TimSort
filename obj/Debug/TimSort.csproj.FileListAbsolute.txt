@@ -6,3 +6,12 @@ c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\Win
 c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.Form1.resources
 c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.exe
 c:\users\dadya_fedar\documents\visual studio 2017\Projects\WindowsFormsApp10\WindowsFormsApp10\obj\Debug\WindowsFormsApp10.pdb
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\bin\Debug\WindowsFormsApp10.exe
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\bin\Debug\WindowsFormsApp10.pdb
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\obj\Debug\TimSort.csproj.AssemblyReference.cache
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\obj\Debug\WindowsFormsApp10.Form1.resources
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\obj\Debug\WindowsFormsApp10.Properties.Resources.resources
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\obj\Debug\TimSort.csproj.GenerateResource.cache
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\obj\Debug\TimSort.csproj.CoreCompileInputs.cache
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\obj\Debug\WindowsFormsApp10.exe
+D:\Julio\OneDrive - Fatec Centro Paula Souza\Faculdade FATEC\Terceiro Semestre\Estrutura de dados\Timsort - git\Trabalho - Estrutura de Dados - Timsort.docx\obj\Debug\WindowsFormsApp10.pdb

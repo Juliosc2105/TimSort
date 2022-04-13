@@ -8,7 +8,7 @@ namespace WindowsFormsApp10
     static class Program
     {
         /// <summary>
-        /// Главная точка входа для приложения.
+        /// O principal ponto de entrada para o aplicativo.
         /// </summary>
         [STAThread]
         static void Main()

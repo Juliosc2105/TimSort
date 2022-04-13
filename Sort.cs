@@ -9,18 +9,18 @@ namespace WindowsFormsApp10
     {
         double[] mass;
         int minrun;
-        List<List<double>> RunStack=new List<List<double>>();//Почти стэк всех подмассивов Run...
+        List<List<double>> RunStack=new List<List<double>>();//Quase uma pilha de todos os subarrays de Run...
 
         public Sort(double[] mass)
         {
             this.mass = mass;
-            this.minrun = CalculMinRun();//Сразу вычисляем minrun...
+            this.minrun = CalculMinRun();//Calcule minrun imediatamente...
         }
 
         /// <summary>
-        /// Метод расчета minrun...
+        /// método de cálculo minrun...
         /// </summary>
-        /// <returns>Минимальный размер массива при разбиении...</returns>
+        /// <returns>O tamanho mínimo de uma matriz ao dividir...</returns>
         private int CalculMinRun()
         {
             int r = 0;
@@ -34,13 +34,13 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// В данном методе реализована логика составления Run-массива,
-        /// который в конечном является последовательностью,а в лучшем случае диапозоном...
+        /// Este método implementa a lógica de criação de um array Run,
+        /// que é, em última análise, uma sequência e, na melhor das hipóteses, um intervalo...
         /// </summary>
-        /// <param name="start_index">Номер элемента массива с которого начинаем составлять
-        /// массив Run</param>
-        /// <returns>Возвращает Run-массив,который либо строго упорядочен по-возрастанию,
-        /// либо по не-убыванию...
+        /// <param name="start_index">O número do elemento da matriz a partir do qual começamos a compor
+        /// executar matriz</param>
+        /// <returns>Retorna uma matriz Run que é estritamente crescente,
+        /// ou não descendente...
         /// </returns>
         private List<double> CalculRunMass(int start_index)
         {
@@ -64,10 +64,10 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Вспомогательный метод для определения строго убывыющего массива...
+        /// Método auxiliar para definir um array estritamente decrescente...
         /// </summary>
-        /// <param name="Run">Проверяемый массив Run...</param>
-        /// <returns>True-если массив строго убывающий,False-в противном случае...</returns>
+        /// <param name="Run">Matriz verificada Executar...</param>
+        /// <returns>True se o array estiver estritamente decrescente, False caso contrário...</returns>
         private bool TestWaningRun(List<double> Run)
         {
             for (int i = 0; i < Run.Count-1; i++)
@@ -78,10 +78,10 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Логическое продолжение метода CalculRunMass...
-        /// Переделывает строго убывающий массив в строго возрастающий...
+        /// Continuação lógica do CalculRunMass...
+        /// Converte um array estritamente decrescente em um array estritamente crescente...
         /// </summary>
-        /// <param name="Run">Массив Run(строго убывающий)...</param>
+        /// <param name="Run">Array Run (estritamente decrescente)...</param>
         private void ChangeLocation(ref List<double> Run)
         {
             for (int i = 0; i < Run.Count; i++)
@@ -97,10 +97,10 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Классическая сортировка вставками...Поскольку на вход будет подаваться
-        /// почти отсортированный массив,сортировка будет очень быстрой...
+        /// Ordenação por inserção clássica... Já que a entrada será
+        /// array quase ordenado, a ordenação será muito rápida...
         /// </summary>
-        /// <param name="Run">Run-сортируемый массив...</param>
+        /// <param name="Run">Executar array classificável...</param>
         private void InsertionSort(ref List<double> Run)
         {
             for (int i = 0; i < Run.Count; i++)
@@ -117,7 +117,7 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Процедура-компоновка...Включает всю логику по разделению массива,на подмассивы Run...
+        /// Procedimento de montagem...Inclui toda a lógica para dividir um array em subarrays Executar...
         /// </summary>
         private void SecondStep()
         {
@@ -129,7 +129,7 @@ namespace WindowsFormsApp10
                {
                     int lenght_current_run = current_Run.Count;
                     int right = lenght_current_run + (minrun - lenght_current_run);
-                    //Допустим,это будет работать...
+                    //Digamos que isso funcione...
                     for (int k = lenght_current_run; k < right; k++)
                     {
                         if (i + k < mass.Length) current_Run.Add(mass[i + k]);
@@ -144,9 +144,9 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Процедура-компоновка...Конечный этам нашей сортировки...Реализует всю логику 
-        /// связанную с методом MergeSort,в частности решает проблему подачи меньшего массива
-        /// левее,чем большего...
+        /// Procedure-layout... A fase final da nossa ordenação... Implementa toda a lógica
+        /// associado ao método MergeSort, em particular resolve o problema de fornecer um array menor
+        /// mais à esquerda do que mais...
         /// </summary>
         private void ThridStep()
         {
@@ -193,9 +193,9 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Публичный метод реализующий всю последовательность действий алгоритма TimSort...
+        /// Um método público que implementa toda a sequência de ações do algoritmo TimSort...
         /// </summary>
-        /// <returns>Возвращает отсортированный массив...</returns>
+        /// <returns>Retorna array ordenado...</returns>
         public List<double> Sorting()
         {
             SecondStep();
@@ -204,13 +204,13 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Классический алгоритм слияния двух массивов в один...
-        /// P.S Алгоритм TimSort подразумевает модификацию данного метода,а именно
-        /// модификацию Galloping mode...
+        /// O algoritmo clássico para mesclar dois arrays em um...
+        /// P.S O algoritmo TimSort implica uma modificação deste método, nomeadamente
+        /// Modificação do modo de galope...
         /// </summary>
-        /// <param name="left">Массив с меньшим размером...</param>
-        /// <param name="right">Массив с большим размером...</param>
-        /// <returns>Возвращает объединенный массив...</returns>
+        /// <param name="left">Um array com um tamanho menor...</param>
+        /// <param name="right">Grande matriz...</param>
+        /// <returns>Retorna o array concatenado...</returns>
         private List<double> MergeMass(List<double> left,List<double> right)
         {
             List<double> output = new List<double>();

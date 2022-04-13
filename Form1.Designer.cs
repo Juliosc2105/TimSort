@@ -3,14 +3,14 @@
     partial class Form1
     {
         /// <summary>
-        /// Обязательная переменная конструктора.
+        /// Variável construtora obrigatória.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Освободить все используемые ресурсы.
+        /// Libere todos os recursos usados.
         /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
+        /// <param name="disposing">true se o recurso gerenciado deve ser excluído; caso contrário, falso.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -40,7 +40,7 @@
             this.sort_button.Name = "sort_button";
             this.sort_button.Size = new System.Drawing.Size(102, 23);
             this.sort_button.TabIndex = 0;
-            this.sort_button.Text = "Сортировка";
+            this.sort_button.Text = "Ordenação";
             this.sort_button.UseVisualStyleBackColor = true;
             this.sort_button.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -57,7 +57,7 @@
             this.open_button.Name = "open_button";
             this.open_button.Size = new System.Drawing.Size(102, 23);
             this.open_button.TabIndex = 2;
-            this.open_button.Text = "Открыть файл";
+            this.open_button.Text = "Abrir arquivo";
             this.open_button.UseVisualStyleBackColor = true;
             this.open_button.Click += new System.EventHandler(this.open_button_Click);
             // 

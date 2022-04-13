@@ -18,10 +18,10 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Метод записывающий числа из файла в массив...
+        /// Um método que escreve números de um arquivo para um array...
         /// </summary>
-        /// <param name="read">Поток чтения документа...</param>
-        /// <returns>Одномерный массив...</returns>
+        /// <param name="read">Fluxo de leitura do documento...</param>
+        /// <returns>Matriz unidimensional...</returns>
         private double[] ConvertInFile(StreamReader read)
         {
             string s = null;
@@ -31,9 +31,9 @@ namespace WindowsFormsApp10
         }
 
         /// <summary>
-        /// Метод записи сортированного массива в файл...
+        /// Método para gravar uma matriz classificada em um arquivo...
         /// </summary>
-        /// <param name="mass">Сортированный массив...</param>
+        /// <param name="mass">Matriz ordenada...</param>
         private void CreateSortFile(double[] mass)
         {
             string date = DateTime.Now.ToString("F");
@@ -57,7 +57,7 @@ namespace WindowsFormsApp10
             catch
             {
                 work = false;
-                MessageBox.Show("Файл неккоректен");
+                MessageBox.Show("O arquivo é necrótico");
             }
 
             if (mass.Length == 0) work = false;
@@ -67,7 +67,7 @@ namespace WindowsFormsApp10
                 Sort sort = new Sort(mass);
                 double[] output = sort.Sorting().ToArray();
                 CreateSortFile(output);
-                MessageBox.Show("Массив отсортирован,готовый файл лежит в папке с программой...");
+                MessageBox.Show("O array está ordenado, o arquivo finalizado está na pasta com o programa...");
             }
         }
 
@@ -75,8 +75,8 @@ namespace WindowsFormsApp10
 
         private void open_button_Click(object sender, EventArgs e)
         {
-            openFileDialog1.Filter = "Текстовый файл|*.txt";
-            openFileDialog1.Title = "Выберите текстовый файл для сортировки...";
+            openFileDialog1.Filter = "Arquivo de texto|*.txt";
+            openFileDialog1.Title = "Selecione um arquivo de texto para classificar...";
             textBox1.Clear();
             if (openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
